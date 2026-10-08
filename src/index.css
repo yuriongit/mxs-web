@@ -8,9 +8,21 @@ body {
 }
 
 @theme {
+  /* Font & Font sizes */
+  --text-base: 13.5px;
+  --text-heading: 18px;
   --font-jetbrains: JetBrains Mono;
-  --color-lime: #B6FF6E;
-  --color-pink: #FF6EB7;
-  --color-yellow: #FFFF6E;
+
+  /* Pallete */
+  --color-lime: #b6ff6e;
+  --color-pink: #ff6eb7;
+  --color-yellow: #ffff6e;
+  --color-box: #1C1C1C;
   /*--color-blue: #6EB6FF;*/
+
+  /* Miscelleanous colors */
+  --color-line-break: #141414;
+  
+  /*  */
+  --text-code: 12px
 }
