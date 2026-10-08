@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family:
+    Sofia Sans,
+    sans-serif;
+}
+
+@theme {
+  --font-jetbrains: JetBrains Mono;
+  --color-lime: #B6FF6E;
+  --color-pink: #FF6EB7;
+  --color-yellow: #FFFF6E;
+  /*--color-blue: #6EB6FF;*/
+}
