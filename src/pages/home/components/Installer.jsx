@@ -1,6 +1,7 @@
-import { systems } from "../../../info";
-import { CodeBlock } from "../../../shared/ui/CodeBlock";
 import { useState } from "react";
+import { installationRequirements, systems } from "../../../info";
+import { repo } from "../../../info";
+import { CodeBlock } from "../../../shared/ui/CodeBlock";
 
 export const Installer = () => {
   const [active, setActive] = useState(systems[0].id);
@@ -27,6 +28,28 @@ export const Installer = () => {
       <CodeBlock bare topBorder={false}>
         {system.commands(system.url).join("\n")}
       </CodeBlock>
+
+      <p className="mt-2.5 text-sm text-neutral-600">
+        Other platforms and versions are on the{" "}
+        <a
+          href={`${repo}/releases`}
+          className="underline decoration-neutral-700 underline-offset-4 hover:text-neutral-300"
+        >
+          Releases
+        </a>{" "}
+        page.
+      </p>
     </div>
   );
 };
+
+export const installationSteps = [
+  {
+    label: "Initialize MXS",
+    code: "mxs init",
+  },
+  {
+    label: "Run the demo",
+    code: `mxs demo "Your FirstName"`,
+  },
+];

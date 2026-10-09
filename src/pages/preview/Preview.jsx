@@ -5,5 +5,5 @@ export const Preview = () => {
       <p>This is the preview screen.</p>
       <Link to="/">Back to Home</Link>
     </div>
-  );
+  )
 }

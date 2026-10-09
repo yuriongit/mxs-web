@@ -1,13 +1,17 @@
 {
-  "name": "xs-web",
+  "name": "mxs-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "bunx --bun @biomejs/biome lint --write",
+    "fmt": "bunx --bun @biomejs/biome format --write",
+    "check": "bunx --bun @biomejs/biome check --write",
+    "clean": "rm -rf node_modules /node_modules",
+    "clean:lock": "rm -rf node_modules bun.lock"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -18,6 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
+    "@biomejs/biome": "2.5.15",
     "@eslint/js": "^10.0.1",
     "@rolldown/plugin-babel": "^0.2.3",
     "@types/react": "^19.2.18",

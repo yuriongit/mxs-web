@@ -8,21 +8,23 @@ body {
 }
 
 @theme {
-  /* Font & Font sizes */
-  --text-base: 13.5px;
-  --text-heading: 18px;
+  /* Font sizes */
+  --text-base: 16px;
+  --text-heading: 22px;
+  --text-sm: 14.5px;
+  --text-code: 13.5px;
+  --text-code: 12.5px;
+
+  /* Fonts */
   --font-jetbrains: JetBrains Mono;
 
   /* Pallete */
   --color-lime: #b6ff6e;
   --color-pink: #ff6eb7;
-  --color-yellow: #ffff6e;
   --color-box: #1C1C1C;
-  /*--color-blue: #6EB6FF;*/
+  --color-blue: #6eb6ff;
+  /*--color-yellow: #ffff6e;*/
 
   /* Miscelleanous colors */
-  --color-line-break: #141414;
-  
-  /*  */
-  --text-code: 12px
+  --color-line-break: #262626;
 }
