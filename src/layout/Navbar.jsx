@@ -24,7 +24,12 @@ export const Navbar = () => (
           </Link>
         </li>
         <li>
-          <a href={repo} target="_blank" rel="noreferrer" className="transition text-zinc-400 hover:text-pink">
+          <a
+            href={repo}
+            target="_blank"
+            rel="noreferrer"
+            className="transition text-zinc-400 hover:text-pink"
+          >
             GitHub
           </a>
         </li>

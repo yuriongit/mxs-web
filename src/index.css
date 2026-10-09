@@ -18,13 +18,13 @@ body {
   /* Fonts */
   --font-jetbrains: JetBrains Mono;
 
-  /* Pallete */
+  /* Pallette */
   --color-lime: #b6ff6e;
   --color-pink: #ff6eb7;
-  --color-box: #1C1C1C;
+  --color-box: #1c1c1c;
   --color-blue: #6eb6ff;
-  /*--color-yellow: #ffff6e;*/
+  /*--color-yellow: #FFFF6E;*/
 
-  /* Miscelleanous colors */
+  /* Miscellaneous colors */
   --color-line-break: #262626;
 }

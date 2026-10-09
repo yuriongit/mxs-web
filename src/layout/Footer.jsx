@@ -1,4 +1,4 @@
-import { repo, repoNoHttps } from "../info";
+import { repo, repoNoHttps } from "../info"
 
 export const Footer = () => (
   <footer className="border-t border-neutral-900 w-full">
@@ -20,4 +20,4 @@ export const Footer = () => (
       </a>
     </div>
   </footer>
-);
+)
