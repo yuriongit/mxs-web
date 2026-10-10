@@ -21,6 +21,7 @@ import { ParagraphLink } from "../../shared/components/ParagraphLink"
 import { CodeBlock } from "../../shared/ui/CodeBlock"
 import { Section } from "../../shared/ui/Section"
 import { Installer, installationSteps } from "./components/Installer"
+import demoVideo from "../../assets/demo.webm"
 
 export const Home = () => (
   <div className="min-h-screen text-neutral-300">
@@ -68,7 +69,10 @@ export const Home = () => (
           {/* Demo GIF. Swap the placeholder for: <img src={demoGif} alt="MXS demo" className="h-full w-full object-cover" /> */}
           <div className="aspect-video w-full sm:max-w-lg overflow-hidden border border-dashed border-box-outline bg-box/50">
             <div className="flex h-full w-full items-center justify-center text-xs uppercase tracking-wide text-neutral-600">
-              Demo GIF
+              <video alt="MXS Demo" muted loop autoPlay className="h-full w-full object-cover backdrop-blur-xs">
+                <source src={demoVideo} type="video/webm"></source>
+                <track kind="captions" src={null} />
+              </video>
             </div>
           </div>
         </div>
