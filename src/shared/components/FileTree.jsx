@@ -30,7 +30,7 @@ export const FileTree = () => {
               key={`${n.depth}-${n.name}`}
               className="flex items-center justify-between gap-4 px-4 py-1"
             >
-              <span style={{ paddingLeft: n.depth * 16 }} className={color}>
+              <span style={{ paddingLeft: n.depth * 18 }} className={color}>
                 {n.name}
                 {n.type === "dir" && "/"}
               </span>
