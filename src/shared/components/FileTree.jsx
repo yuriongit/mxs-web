@@ -3,7 +3,10 @@ const tree = [
   // "border-b border-neutral-800 px-4 py-2 font-bold text-pink"
   { name: "~/.mxs", type: "base", depth: 0, note: "Home" },
   { name: "scripts", type: "dir", depth: 1, note: "Your scripts" },
-  { name: "demo.sh", type: "file", depth: 2, note: "Run by using `xs demo`" },
+  { name: "demo.sh", type: "file", depth: 2 },
+  { name: "clone.sh", type: "file", depth: 2 },
+  { name: "+doc.sh", type: "file", depth: 2 },
+  { name: "gopile.sh", type: "file", depth: 2 },
   { name: "...", type: "file", depth: 2 },
 ]
 
