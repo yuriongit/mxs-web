@@ -1,9 +1,17 @@
-import { docs, features, infrastructure, installationReqs,buildFromSourceReqs, buildFromSourceSteps, repo } from "../../info";
-import { FileTree } from "../../shared/components/FileTree";
-import { ParagraphLink } from "../../shared/components/ParagraphLink";
-import { CodeBlock } from "../../shared/ui/CodeBlock";
-import { Section } from "../../shared/ui/Section";
-import { Installer, installationSteps } from "./components/Installer";
+import {
+  buildFromSourceReqs,
+  buildFromSourceSteps,
+  docs,
+  features,
+  infrastructure,
+  installationReqs,
+  repo,
+} from "../../info"
+import { FileTree } from "../../shared/components/FileTree"
+import { ParagraphLink } from "../../shared/components/ParagraphLink"
+import { CodeBlock } from "../../shared/ui/CodeBlock"
+import { Section } from "../../shared/ui/Section"
+import { Installer, installationSteps } from "./components/Installer"
 
 export const Home = () => (
   <div className="min-h-screen text-neutral-300">
@@ -26,7 +34,8 @@ export const Home = () => (
               </h1>
             </div>
             <p className="mt-3 max-w-xs text-lg text-white">
-              A simple & <span className="italic">colored</span> CLI to <span className="text-lime">manage </span> and{" "}
+              A simple & <span className="italic">colored</span> CLI to{" "}
+              <span className="text-lime">manage </span> and{" "}
               <span className="text-blue">execute</span>
               {""} your Bash <span className="text-pink">scripts.</span>
             </p>
@@ -59,8 +68,9 @@ export const Home = () => (
       <Section id="status" title="Disclaimer">
         <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
           <p className="text-base leading-relaxed text-paragraph">
-            This page is still being built. Releases aren't available yet, so the Installation section won't work for
-            now, and some docs are marked as coming soon. To try out MXS, build it from source: See{" "}
+            This page is still being built. Releases aren't available yet, so
+            the Installation section won't work for now, and some docs are
+            marked as coming soon. To try out MXS, build it from source: See{" "}
             <ParagraphLink href="#start" text={"Quick Start"} />.
           </p>
         </div>
@@ -87,15 +97,18 @@ export const Home = () => (
         reqs={installationReqs}
         note={
           <>
-            Get started with a public release. If you prefer to build from source, see the{" "}
-            <ParagraphLink href={"#quick-start"} text={"Quick Start"} /> section below.
+            Get started with a public release. If you prefer to build from
+            source, see the{" "}
+            <ParagraphLink href={"#quick-start"} text={"Quick Start"} /> section
+            below.
           </>
         }
       >
         <ol className="space-y-6">
           <li>
             <div className="mb-2 text-sm text-paragraph">
-              <span className="text-pink">1.</span> Download and install the binary
+              <span className="text-pink">1.</span> Download and install the
+              binary
             </div>
             <Installer />
           </li>
@@ -116,7 +129,8 @@ export const Home = () => (
         reqs={buildFromSourceReqs}
         note={
           <>
-            This section builds MXS from source. If you prefer to install a public release, see the{" "}
+            This section builds MXS from source. If you prefer to install a
+            public release, see the{" "}
             <ParagraphLink href={"#install"} text={"Installation"} /> section.
           </>
         }
@@ -136,9 +150,12 @@ export const Home = () => (
       <Section id="config" title="Configuration">
         <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
           <p className="text-base leading-relaxed text-paragraph max-w-sm">
-            <code className="text-pink font-syntax text-code">~/.mxs </code> is the home for your scripts. View the full
-            layout document for more detailed information: <ParagraphLink href={`${repo}/blob/main/docs/mxs.md`} />{" "}
-            docs/config.md <span className="text-subnote">(document coming soon).</span>
+            <code className="text-pink font-syntax text-code">~/.mxs </code> is
+            the home for your scripts. View the full layout document for more
+            detailed information:{" "}
+            <ParagraphLink href={`${repo}/blob/main/docs/mxs.md`} />{" "}
+            docs/config.md{" "}
+            <span className="text-subnote">(document coming soon).</span>
           </p>
           <FileTree />
         </div>
@@ -159,7 +176,10 @@ export const Home = () => (
         <ul className="space-y-2 text-sm">
           {docs.map(([name, href]) => (
             <li key={name}>
-              <a href={href} className="text-paragraph hover:text-pink transition flex gap-x-2.5 w-fit p-px">
+              <a
+                href={href}
+                className="text-paragraph hover:text-pink transition flex gap-x-2.5 w-fit p-px"
+              >
                 <span className="text-neutral-700">→ </span>
                 {name}
               </a>
@@ -169,4 +189,4 @@ export const Home = () => (
       </Section>
     </main>
   </div>
-);
+)
