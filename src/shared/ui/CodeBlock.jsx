@@ -18,9 +18,9 @@ export const CodeBlock = ({ children }) => {
 
   return (
     <div
-      className={`group relative border rounded-md border-line-break bg-white/1 backdrop-blur-xs`}
+      className={`group relative border border-box-outline bg-box/35 backdrop-blur-xs`}
     >
-      <pre className="overflow-x-auto p-4 pr-16 text-code font-jetbrains font-bold leading-relaxed text-zinc-200">
+      <pre className="overflow-x-auto p-4 pr-16 text-code font-syntax font-bold leading-relaxed text-zinc-200">
         {children.split("\n").map((line, i) => (
           <div key={i}>
             <span className="select-none text-zinc-500">$ </span>
@@ -31,7 +31,7 @@ export const CodeBlock = ({ children }) => {
       <button
         type="button"
         onClick={copy}
-        className="absolute py-0.75 px-2.5 bg-box right-3 top-3 rounded-sm text-xs text-zinc-500 transition hover:text-lime hover:cursor-pointer"
+        className="absolute py-0.75 px-2.5 bg-box right-3 top-3 rounded-sm text-xs text-subnote transition hover:text-pink hover:cursor-pointer"
       >
         {copied ? "Copied" : "Copy"}
       </button>
