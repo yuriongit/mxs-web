@@ -28,7 +28,7 @@ export const FileTree = () => {
           return (
             <li
               key={`${n.depth}-${n.name}`}
-              className="flex items-center justify-between gap-4 px-4 py-1"
+              className="flex items-center justify-between gap-4 px-4 py-1 font-bold text-code"
             >
               <span style={{ paddingLeft: n.depth * 18 }} className={color}>
                 {n.name}
