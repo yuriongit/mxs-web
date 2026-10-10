@@ -1,4 +1,13 @@
 import {
+  IconAlertTriangle,
+  IconCarambola,
+  IconDownload,
+  IconFolderOpen,
+  IconHammer,
+  IconMarkdown,
+  IconStack2,
+} from "@tabler/icons-react"
+import {
   buildFromSourceReqs,
   buildFromSourceSteps,
   docs,
@@ -65,23 +74,23 @@ export const Home = () => (
         </div>
       </div>
 
-      <Section id="status" title="Disclaimer">
+      <Section id="status" title="Disclaimer" icon={IconAlertTriangle}>
         <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
           <p className="text-base leading-relaxed text-paragraph">
             This page is still being built. Releases aren't available yet, so
             the Installation section won't work for now, and some docs are
             marked as coming soon. To try out MXS, build it from source: See{" "}
-            <ParagraphLink href="#start" text={"Quick Start"} />.
+            <ParagraphLink href="#quick-start" text={"Quick Start"} />.
           </p>
         </div>
       </Section>
 
-      <Section id="features" title="Features">
+      <Section id="features" title="Features" icon={IconCarambola}>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
             <div key={f.title} className="border border-box-outline p-4">
-              <h3 className="text-base font-bold text-paragraph">{f.title}</h3>
-              <p className="mt-1 text-sm text-neutral-400">{f.body}</p>
+              <h3 className="text-base font-light text-paragraph">{f.title}</h3>
+              <p className="mt-1 text-sm text-subnote">{f.body}</p>
             </div>
           ))}
         </div>
@@ -95,6 +104,7 @@ export const Home = () => (
         id="install"
         title="Installation"
         reqs={installationReqs}
+        icon={IconDownload}
         note={
           <>
             Get started with a public release. If you prefer to build from
@@ -127,6 +137,7 @@ export const Home = () => (
         id="build-from-source"
         title="Build From Source"
         reqs={buildFromSourceReqs}
+        icon={IconHammer}
         note={
           <>
             This section builds MXS from source. If you prefer to install a
@@ -147,7 +158,11 @@ export const Home = () => (
         </ol>
       </Section>
 
-      <Section id="config" title="Configuration">
+      <Section
+        id="scripts-home"
+        title="Your Script's Home"
+        icon={IconFolderOpen}
+      >
         <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
           <p className="text-base leading-relaxed text-paragraph max-w-sm">
             <code className="text-pink font-syntax text-code">~/.mxs </code> is
@@ -161,7 +176,7 @@ export const Home = () => (
         </div>
       </Section>
 
-      <Section id="infrastructure" title="Infrastructure">
+      <Section id="infrastructure" title="Infrastructure" icon={IconStack2}>
         <dl className="divide-y divide-box-outline border border-box-outline text-sm">
           {infrastructure.map(([k, v]) => (
             <div key={k} className="flex justify-between gap-4 px-4 py-3">
@@ -172,7 +187,12 @@ export const Home = () => (
         </dl>
       </Section>
 
-      <Section id="documents" title="Documents" lineBreak={true}>
+      <Section
+        id="documents"
+        title="Documents"
+        lineBreak={true}
+        icon={IconMarkdown}
+      >
         <ul className="space-y-2 text-sm">
           {docs.map(([name, href]) => (
             <li key={name}>

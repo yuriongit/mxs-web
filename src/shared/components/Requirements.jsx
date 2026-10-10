@@ -6,7 +6,7 @@ export const Requirements = ({
   <div
     className={`w-full shrink-0 border border-dashed border-box-outline bg-box/50 ${className}`}
   >
-    <p className="border-b border-dashed border-box-outline px-4 py-2 text-xs font-bold text-pink">
+    <p className="border-b border-dashed border-box-outline px-4 py-2 text-xs font-normal text-pink">
       {title}
     </p>
     <dl className="divide-y divide-box-outline text-xs">

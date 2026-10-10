@@ -11,7 +11,7 @@ export const Installer = () => {
     <div className="bg-white/0.25 backdrop-blur-xs">
       <div
         role="tablist"
-        className="flex border-t border-l border-b-none border-r border-box-outline text-xs font-bold"
+        className="flex border-t border-l border-b-none border-r border-box-outline text-xs font-normal"
       >
         {systems.map((s) => (
           <button
