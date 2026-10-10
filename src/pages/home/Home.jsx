@@ -1,4 +1,4 @@
-import { IconAlertTriangle, IconCarambola, IconDownload } from "@tabler/icons-react"
+import { IconAlertTriangle, IconCarambola, IconDownload, IconHammer } from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -129,6 +129,7 @@ export const Home = () => (
         id="build-from-source"
         title="Build From Source"
         reqs={buildFromSourceReqs}
+        icon={IconHammer}
         note={
           <>
             This section builds MXS from source. If you prefer to install a
