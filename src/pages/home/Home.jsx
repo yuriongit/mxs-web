@@ -1,4 +1,4 @@
-import { IconAlertTriangle, IconCarambola, IconDownload, IconHammer } from "@tabler/icons-react"
+import { IconAlertTriangle, IconCarambola, IconDownload, IconFolderOpen, IconHammer } from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -72,7 +72,7 @@ export const Home = () => (
             This page is still being built. Releases aren't available yet, so
             the Installation section won't work for now, and some docs are
             marked as coming soon. To try out MXS, build it from source: See{" "}
-            <ParagraphLink href="#start" text={"Quick Start"} />.
+            <ParagraphLink href="#quick-start" text={"Quick Start"} />.
           </p>
         </div>
       </Section>
@@ -81,8 +81,8 @@ export const Home = () => (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
             <div key={f.title} className="border border-box-outline p-4">
-              <h3 className="text-base font-bold text-paragraph">{f.title}</h3>
-              <p className="mt-1 text-sm text-neutral-400">{f.body}</p>
+              <h3 className="text-base font-light text-paragraph">{f.title}</h3>
+              <p className="mt-1 text-sm text-subnote">{f.body}</p>
             </div>
           ))}
         </div>
@@ -150,7 +150,7 @@ export const Home = () => (
         </ol>
       </Section>
 
-      <Section id="config" title="Configuration">
+      <Section id="scripts-home" title="Your Script's Home" icon={IconFolderOpen}>
         <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
           <p className="text-base leading-relaxed text-paragraph max-w-sm">
             <code className="text-pink font-syntax text-code">~/.mxs </code> is
