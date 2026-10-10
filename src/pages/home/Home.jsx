@@ -1,4 +1,4 @@
-import { IconAlertTriangle } from "@tabler/icons-react"
+import { IconAlertTriangle, IconCarambola } from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -77,7 +77,7 @@ export const Home = () => (
         </div>
       </Section>
 
-      <Section id="features" title="Features">
+      <Section id="features" title="Features" icon={IconCarambola}>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
             <div key={f.title} className="border border-box-outline p-4">
