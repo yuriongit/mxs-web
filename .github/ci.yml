@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      # Setup Bun
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.2"
+
+      # Install Dependencies
+      - name: Install Dependencies
+        run: bun install --frozen-lockfile
+
+      # Run Biome CI check
+      - name: Run Biome CI check
+        run: bunx biome ci
+
+      # Build
+      - name: Build
+        run: bun run build
