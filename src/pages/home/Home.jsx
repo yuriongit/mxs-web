@@ -1,4 +1,4 @@
-import { IconAlertTriangle, IconCarambola, IconDownload, IconFolderOpen, IconHammer } from "@tabler/icons-react"
+import { IconAlertTriangle, IconCarambola, IconCashEdit, IconDownload, IconFolderOpen, IconHammer, IconStack2, IconStack3 } from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -164,7 +164,7 @@ export const Home = () => (
         </div>
       </Section>
 
-      <Section id="infrastructure" title="Infrastructure">
+      <Section id="infrastructure" title="Infrastructure" icon={IconStack2}>
         <dl className="divide-y divide-box-outline border border-box-outline text-sm">
           {infrastructure.map(([k, v]) => (
             <div key={k} className="flex justify-between gap-4 px-4 py-3">
