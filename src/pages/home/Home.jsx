@@ -1,4 +1,12 @@
-import { IconAlertTriangle, IconCarambola, IconCashEdit, IconDownload, IconFolderOpen, IconHammer, IconMarkdown, IconPaperclip, IconStack2, IconStack3 } from "@tabler/icons-react"
+import {
+  IconAlertTriangle,
+  IconCarambola,
+  IconDownload,
+  IconFolderOpen,
+  IconHammer,
+  IconMarkdown,
+  IconStack2,
+} from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -150,7 +158,11 @@ export const Home = () => (
         </ol>
       </Section>
 
-      <Section id="scripts-home" title="Your Script's Home" icon={IconFolderOpen}>
+      <Section
+        id="scripts-home"
+        title="Your Script's Home"
+        icon={IconFolderOpen}
+      >
         <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
           <p className="text-base leading-relaxed text-paragraph max-w-sm">
             <code className="text-pink font-syntax text-code">~/.mxs </code> is
@@ -175,7 +187,12 @@ export const Home = () => (
         </dl>
       </Section>
 
-      <Section id="documents" title="Documents" lineBreak={true} icon={IconMarkdown}>
+      <Section
+        id="documents"
+        title="Documents"
+        lineBreak={true}
+        icon={IconMarkdown}
+      >
         <ul className="space-y-2 text-sm">
           {docs.map(([name, href]) => (
             <li key={name}>
