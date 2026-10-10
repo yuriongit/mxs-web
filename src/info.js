@@ -3,20 +3,20 @@ export const repoNoHttps = "github.com/yuriongit/mxs"
 
 export const features = [
   {
-    title: "Global Configuration",
-    body: "Scripts live in `~/.mxs`, and MXS automatically handles the initialization.",
+    title: "Arguments Support",
+    body: "Built-in support for passing arguments to your scripts.",
   },
   {
-    title: "Script Execution",
-    body: "Simply run a script by using just it's name: No file ext. needed.",
+    title: "Execution Simplicity",
+    body: "Just run a script by using it's name: No file extension needed.",
   },
   {
     title: "Structured Output",
     body: "Colored and helpful output with automatic error/success reports.",
   },
   {
-    title: "Short & Sweet Syntax",
-    body: "Straightforward syntax specifically made for workflows.",
+    title: "Concise Syntax",
+    body: "Short and sweet syntax specifically made for workflows.",
   },
 ]
 
