@@ -3,7 +3,7 @@ import { useState } from "react"
 // Commands that take plain arguments instead of a subcommand.
 const NO_SUBCOMMAND = new Set(["cd"])
 
-export const CodeBlock = ({ children, topBorder: topRounding }) => {
+export const CodeBlock = ({ children }) => {
   const [copied, setCopied] = useState(false)
 
   const copy = async () => {
@@ -18,7 +18,7 @@ export const CodeBlock = ({ children, topBorder: topRounding }) => {
 
   return (
     <div
-      className={`group relative ${!topRounding ? "rounded-t-none" : ""} border rounded-md border-line-break bg-white/1 backdrop-blur-xs`}
+      className={`group relative border rounded-md border-line-break bg-white/1 backdrop-blur-xs`}
     >
       <pre className="overflow-x-auto p-4 pr-16 text-code font-jetbrains font-bold leading-relaxed text-zinc-200">
         {children.split("\n").map((line, i) => (
