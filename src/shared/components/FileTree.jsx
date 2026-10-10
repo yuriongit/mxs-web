@@ -12,7 +12,7 @@ const tree = [
 
 export const FileTree = () => {
   return (
-    <div className="w-full rounded-md border border-neutral-800 bg-box/15 font-jetbrains text-xs backdrop-blur-xs sm:w-[50%]">
+    <div className="p-1.5 w-full sm:max-w-lg overflow-hidden font-syntax text-xs backdrop-blur-xs border border-dashed border-box-outline bg-box/50">
       <ul className="py-2">
         {tree.map((n) => {
           let color = ""
