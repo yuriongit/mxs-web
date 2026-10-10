@@ -9,22 +9,27 @@ body {
 
 @theme {
   /* Font sizes */
-  --text-base: 16px;
-  --text-heading: 22px;
-  --text-sm: 14.5px;
+  --text-navlogo: 20px;
+  --text-base: 17px;
+  --text-heading: 24px;
+  --text-sm: 16px;
+  --text-xs: 14.5px;
   --text-code: 13.5px;
-  --text-code: 12.5px;
 
   /* Fonts */
-  --font-jetbrains: JetBrains Mono;
+  --font-syntax: JetBrains Mono;
+  --font-reg: Sofia Sans;
 
   /* Pallette */
   --color-lime: #b6ff6e;
   --color-pink: #ff6eb7;
   --color-box: #1c1c1c;
   --color-blue: #6eb6ff;
-  /*--color-yellow: #FFFF6E;*/
+
+  --color-paragraph: #dbdbdb;
+  --color-subnote: #737373;
 
   /* Miscellaneous colors */
-  --color-line-break: #262626;
+  --color-box-outline: #292929;
+  --color-dark-line-break: #171717;
 }
