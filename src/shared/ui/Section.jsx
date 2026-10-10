@@ -1,17 +1,37 @@
-export const Section = ({ id, title, note, children }) => {
+import { Requirements } from "../components/Requirements"
+
+export const Section = ({
+  lineBreak,
+  id,
+  title,
+  note,
+  reqs,
+  children,
+}) => {
   return (
-    <section id={id} className="mt-20">
-      <h2
-        className={`${note ? "mb-2" : "mb-6"} text-heading font-bold text-lime`}
-      >
-        {title}
-      </h2>
-      {note && (
-        <p className="mb-6 max-w-md lg:pr-10 text-sm text-neutral-500">
-          {note}
-        </p>
-      )}
-      {children}
-    </section>
+    <>
+      {!lineBreak && <div className="bg-dark-line-break w-full h-px" />}
+      
+      <section id={id} className="my-20">
+        <div className={`flex items-start justify-between w-full gap-5 ${reqs != null && "min-h-45"}`}>
+          <div className="w-full">
+            <h2
+              className={`${note ? "mb-2" : "mb-6"} text-heading font-bold text-lime`}
+            >
+              {title}
+            </h2>
+            {note && (
+              <p className="mb-6 max-w-116 text-sm text-neutral-500">{note}</p>
+            )}
+          </div>
+          <div className="pb-5 w-full">
+            {reqs != null && <Requirements reqs={reqs} />}
+          </div>
+        </div>
+        {children}
+      </section>
+
+      {!lineBreak && <div className="bg-dark-line-break w-full h-px" />}
+    </>
   )
 }
