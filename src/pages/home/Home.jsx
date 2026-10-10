@@ -1,3 +1,4 @@
+import { IconAlertTriangle } from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -65,7 +66,7 @@ export const Home = () => (
         </div>
       </div>
 
-      <Section id="status" title="Disclaimer">
+      <Section id="status" title="Disclaimer" icon={IconAlertTriangle}>
         <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
           <p className="text-base leading-relaxed text-paragraph">
             This page is still being built. Releases aren't available yet, so
