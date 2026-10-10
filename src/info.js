@@ -56,19 +56,19 @@ export const systems = [
   },
 ]
 
-export const quickStartRequirements = [
-  { name: "Go", version: "1.27" },
+export const buildFromSourceReqs = [
+  { name: "Go", version: "1.27+" },
   {
     name: "Bash",
-    version: "5.3.9",
+    version: "5.3.9+",
   },
   { name: "Architecture", version: "x86_64" },
 ]
 
-export const installationRequirements = [
+export const installationReqs = [
   {
     name: "Bash",
-    version: "5.3.9",
+    version: "5.3.9+",
   },
   { name: "Architecture", version: "x86_64" },
 ]
@@ -78,7 +78,7 @@ export const infrastructure = [
   ["UI", "Bubbles, Lipgloss"],
 ]
 
-export const quickStartSteps = [
+export const buildFromSourceSteps = [
   {
     label: "Clone",
     code: `git clone ${repo}.git\ncd mxs`,
