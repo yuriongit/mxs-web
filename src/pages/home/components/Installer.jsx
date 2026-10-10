@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { repo, systems } from "../../../info"
+import { ParagraphLink } from "../../../shared/components/ParagraphLink"
 import { CodeBlock } from "../../../shared/ui/CodeBlock"
 
 export const Installer = () => {
@@ -7,10 +8,10 @@ export const Installer = () => {
   const system = systems.find((s) => s.id === active)
 
   return (
-    <div className="rounded-md bg-white/0.25 backdrop-blur-xs">
+    <div className="bg-white/0.25 backdrop-blur-xs">
       <div
         role="tablist"
-        className="flex border-t border-l border-r rounded-t-md border-line-break text-xs font-bold"
+        className="flex border-t border-l border-b-none border-r border-box-outline text-xs font-bold"
       >
         {systems.map((s) => (
           <button
@@ -29,19 +30,11 @@ export const Installer = () => {
           </button>
         ))}
       </div>
-      <CodeBlock bare topBorder={false}>
-        {system.commands(system.url).join("\n")}
-      </CodeBlock>
+      <CodeBlock bare>{system.commands(system.url).join("\n")}</CodeBlock>
 
-      <p className="mt-2.5 text-sm text-neutral-600">
+      <p className="mt-2.5 text-sm text-subnote">
         Other platforms and versions are on the{" "}
-        <a
-          href={`${repo}/releases`}
-          className="underline decoration-neutral-700 underline-offset-4 hover:text-neutral-300"
-        >
-          Releases
-        </a>{" "}
-        page.
+        <ParagraphLink href={`${repo}/releases`} text={"Releases"} /> page.
       </p>
     </div>
   )
