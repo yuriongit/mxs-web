@@ -1,4 +1,4 @@
-import { IconAlertTriangle, IconCarambola } from "@tabler/icons-react"
+import { IconAlertTriangle, IconCarambola, IconDownload } from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -96,6 +96,7 @@ export const Home = () => (
         id="install"
         title="Installation"
         reqs={installationReqs}
+        icon={IconDownload}
         note={
           <>
             Get started with a public release. If you prefer to build from
