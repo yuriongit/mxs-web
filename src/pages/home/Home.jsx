@@ -1,4 +1,4 @@
-import { IconAlertTriangle, IconCarambola, IconCashEdit, IconDownload, IconFolderOpen, IconHammer, IconStack2, IconStack3 } from "@tabler/icons-react"
+import { IconAlertTriangle, IconCarambola, IconCashEdit, IconDownload, IconFolderOpen, IconHammer, IconMarkdown, IconPaperclip, IconStack2, IconStack3 } from "@tabler/icons-react"
 import {
   buildFromSourceReqs,
   buildFromSourceSteps,
@@ -175,7 +175,7 @@ export const Home = () => (
         </dl>
       </Section>
 
-      <Section id="documents" title="Documents" lineBreak={true}>
+      <Section id="documents" title="Documents" lineBreak={true} icon={IconMarkdown}>
         <ul className="space-y-2 text-sm">
           {docs.map(([name, href]) => (
             <li key={name}>
