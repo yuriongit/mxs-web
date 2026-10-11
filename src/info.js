@@ -1,6 +1,7 @@
 export const repo = "https://github.com/yuriongit/mxs"
 
-const RAW_GITHUB_USER_CONTENT_URL = "https://raw.githubusercontent.com/yuriongit/mxs/main"
+const RAW_GITHUB_USER_CONTENT_URL =
+  "https://raw.githubusercontent.com/yuriongit/mxs/main"
 
 export const repoNoHttps = "github.com/yuriongit/mxs"
 
@@ -27,17 +28,26 @@ export const systems = [
   {
     id: "ubuntu",
     label: "Ubuntu",
-    commands: [`wget ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`, "sh install-linux.sh"],
+    commands: [
+      `wget ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`,
+      "sh install-linux.sh",
+    ],
   },
   {
     id: "fedora",
     label: "Fedora",
-    commands: [`curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`, "sh install-linux.sh"],
+    commands: [
+      `curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`,
+      "sh install-linux.sh",
+    ],
   },
   {
     id: "mac",
     label: "macOS",
-    commands: [`curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-mac.sh`, "sh install-mac.sh"],
+    commands: [
+      `curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-mac.sh`,
+      "sh install-mac.sh",
+    ],
   },
 ]
 
