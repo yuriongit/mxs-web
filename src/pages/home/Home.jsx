@@ -128,8 +128,11 @@ export const Home = () => (
           <>
             Get started with a public release. If you prefer to build from
             source, see the{" "}
-            <ParagraphLink href={"#build-from-source"} text={"Build From Source"} /> section
-            below.
+            <ParagraphLink
+              href={"#build-from-source"}
+              text={"Build From Source"}
+            />{" "}
+            section below.
           </>
         }
       >
@@ -161,7 +164,8 @@ export const Home = () => (
           <>
             This section builds MXS from source. If you prefer to install a
             public release, see the{" "}
-            <ParagraphLink href={"#installation"} text={"Installation"} /> section.
+            <ParagraphLink href={"#installation"} text={"Installation"} />{" "}
+            section.
           </>
         }
       >
