@@ -1,4 +1,8 @@
 export const repo = "https://github.com/yuriongit/mxs"
+
+const RAW_GITHUB_USER_CONTENT_URL =
+  "https://raw.githubusercontent.com/yuriongit/mxs/main"
+
 export const repoNoHttps = "github.com/yuriongit/mxs"
 
 export const features = [
@@ -20,38 +24,29 @@ export const features = [
   },
 ]
 
-// Placeholder asset names. Match them to the files attached to each release.
-export const release = `${repo}/releases/latest/download`
-
 export const systems = [
   {
     id: "ubuntu",
     label: "Ubuntu",
-    url: `${release}/mxs-linux-amd64`,
-    commands: (url) => [
-      `wget ${url} -O mxs`,
-      "chmod +x mxs",
-      "sudo mv mxs /usr/local/bin/",
+    commands: [
+      `wget ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`,
+      "sh install-linux.sh",
     ],
   },
   {
     id: "fedora",
     label: "Fedora",
-    url: `${release}/mxs-linux-amd64`,
-    commands: (url) => [
-      `curl -L ${url} -o mxs`,
-      "chmod +x mxs",
-      "sudo mv mxs /usr/local/bin/",
+    commands: [
+      `curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`,
+      "sh install-linux.sh",
     ],
   },
   {
     id: "mac",
     label: "macOS",
-    url: `${release}/mxs-darwin-arm64`,
-    commands: (url) => [
-      `curl -L ${url} -o mxs`,
-      "chmod +x mxs",
-      "sudo mv mxs /usr/local/bin/",
+    commands: [
+      `curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-mac.sh`,
+      "sh install-mac.sh",
     ],
   },
 ]

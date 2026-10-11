@@ -30,7 +30,7 @@ export const Installer = () => {
           </button>
         ))}
       </div>
-      <CodeBlock bare>{system.commands(system.url).join("\n")}</CodeBlock>
+      <CodeBlock bare>{system.commands.join("\n")}</CodeBlock>
 
       <p className="mt-2.5 text-sm text-subnote">
         Other platforms and versions are on the{" "}
