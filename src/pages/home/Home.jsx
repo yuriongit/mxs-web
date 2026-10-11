@@ -52,7 +52,7 @@ export const Home = () => (
 
             <div className="mt-8 max-w-2xs w-full flex gap-2.5 text-sm">
               <a
-                href="#start"
+                href="#installation"
                 className="group w-full uppercase bg-lime px-5 text-center py-1.5 hover:font-black font-extrabold text-neutral-950 transition-all duration-175 hover:bg-blue"
               >
                 Execute!
