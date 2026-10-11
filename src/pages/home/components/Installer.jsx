@@ -1,10 +1,8 @@
-import { useState } from "react"
-import { repo, systems } from "../../../info"
-import { ParagraphLink } from "../../../shared/components/ParagraphLink"
+import { systems } from "../../../info"
 import { CodeBlock } from "../../../shared/ui/CodeBlock"
 
-export const Installer = () => {
-  const [active, setActive] = useState(systems[0].id)
+// Controlled: the parent owns the active tab.
+export const Installer = ({ active, onChange }) => {
   const system = systems.find((s) => s.id === active)
 
   return (
@@ -19,7 +17,7 @@ export const Installer = () => {
             type="button"
             role="tab"
             aria-selected={s.id === active}
-            onClick={() => setActive(s.id)}
+            onClick={() => onChange(s.id)}
             className={`px-4 py-2.5 transition hover:cursor-pointer ${
               s.id === active
                 ? "bg-pink/10 text-pink"
@@ -31,11 +29,6 @@ export const Installer = () => {
         ))}
       </div>
       <CodeBlock bare>{system.commands.join("\n")}</CodeBlock>
-
-      <p className="mt-2.5 text-sm text-subnote">
-        Other platforms and versions are on the{" "}
-        <ParagraphLink href={`${repo}/releases`} text={"Releases"} /> page.
-      </p>
     </div>
   )
 }
