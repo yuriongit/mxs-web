@@ -128,7 +128,7 @@ export const Home = () => (
           <>
             Get started with a public release. If you prefer to build from
             source, see the{" "}
-            <ParagraphLink href={"#quick-start"} text={"Quick Start"} /> section
+            <ParagraphLink href={"#build-from-source"} text={"Build From Source"} /> section
             below.
           </>
         }
