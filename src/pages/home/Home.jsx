@@ -117,8 +117,8 @@ export const Home = () => (
         </p>
       </Section>
 
-      <Installation/>
-      
+      <Installation />
+
       <Section
         id="build-from-source"
         title="Build From Source"

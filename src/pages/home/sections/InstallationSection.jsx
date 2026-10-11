@@ -10,7 +10,7 @@ import { Installer, installationSteps } from "../components/Installer"
 export const Installation = () => {
   const [active, setActive] = useState(systems[0].id)
   const system = systems.find((s) => s.id === active)
- 
+
   return (
     <Section
       id="install"
@@ -19,8 +19,8 @@ export const Installation = () => {
       icon={IconDownload}
       note={
         <>
-          Get started with a public release. If you prefer to build from
-          source, see the{" "}
+          Get started with a public release. If you prefer to build from source,
+          see the{" "}
           <ParagraphLink
             href={"#build-from-source"}
             text={"Build From Source"}
@@ -29,12 +29,12 @@ export const Installation = () => {
         </>
       }
     >
-    <ol className="space-y-6">
-      <li>
-        <div className="mb-2 text-sm text-paragraph">
-          <span className="text-pink">1.</span> Download and install the
-          binary
-        </div>
+      <ol className="space-y-6">
+        <li>
+          <div className="mb-2 text-sm text-paragraph">
+            <span className="text-pink">1.</span> Download and install the
+            binary
+          </div>
           <Installer active={active} onChange={setActive} />
         </li>
         {installationSteps.map((s, i) => (
