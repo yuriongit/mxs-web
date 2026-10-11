@@ -120,7 +120,7 @@ export const Home = () => (
       </Section>
 
       <Section
-        id="install"
+        id="installation"
         title="Installation"
         reqs={installationReqs}
         icon={IconDownload}
@@ -161,7 +161,7 @@ export const Home = () => (
           <>
             This section builds MXS from source. If you prefer to install a
             public release, see the{" "}
-            <ParagraphLink href={"#install"} text={"Installation"} /> section.
+            <ParagraphLink href={"#installation"} text={"Installation"} /> section.
           </>
         }
       >
