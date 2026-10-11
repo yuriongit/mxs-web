@@ -32,6 +32,10 @@ export const systems = [
       `wget ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`,
       "sh install-linux.sh",
     ],
+    requirements: [
+      { name: "Architecture", version: "x86_64" },
+      { name: "Shell", version: "Bash" },
+    ],
   },
   {
     id: "fedora",
@@ -40,6 +44,10 @@ export const systems = [
       `curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-linux.sh`,
       "sh install-linux.sh",
     ],
+    requirements: [
+      { name: "Architecture", version: "x86_64" },
+      { name: "Shell", version: "Bash" },
+    ],
   },
   {
     id: "mac",
@@ -47,6 +55,10 @@ export const systems = [
     commands: [
       `curl -fsSLO ${RAW_GITHUB_USER_CONTENT_URL}/install-mac.sh`,
       "sh install-mac.sh",
+    ],
+    requirements: [
+      { name: "Architecture", version: "arm64 (Apple Silicon)" },
+      { name: "Shell", version: "Bash" },
     ],
   },
 ]
