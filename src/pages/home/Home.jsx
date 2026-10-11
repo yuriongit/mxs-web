@@ -52,7 +52,7 @@ export const Home = () => (
 
             <div className="mt-8 max-w-2xs w-full flex gap-2.5 text-sm">
               <a
-                href="#start"
+                href="#installation"
                 className="group w-full uppercase bg-lime px-5 text-center py-1.5 hover:font-black font-extrabold text-neutral-950 transition-all duration-175 hover:bg-blue"
               >
                 Execute!
@@ -120,7 +120,7 @@ export const Home = () => (
       </Section>
 
       <Section
-        id="install"
+        id="installation"
         title="Installation"
         reqs={installationReqs}
         icon={IconDownload}
@@ -128,8 +128,11 @@ export const Home = () => (
           <>
             Get started with a public release. If you prefer to build from
             source, see the{" "}
-            <ParagraphLink href={"#quick-start"} text={"Quick Start"} /> section
-            below.
+            <ParagraphLink
+              href={"#build-from-source"}
+              text={"Build From Source"}
+            />{" "}
+            section below.
           </>
         }
       >
@@ -161,7 +164,8 @@ export const Home = () => (
           <>
             This section builds MXS from source. If you prefer to install a
             public release, see the{" "}
-            <ParagraphLink href={"#install"} text={"Installation"} /> section.
+            <ParagraphLink href={"#installation"} text={"Installation"} />{" "}
+            section.
           </>
         }
       >
