@@ -93,7 +93,13 @@ export const Home = () => (
             2. MXS has now been released under v0.1.0-beta.
           </p>
           <p className="text-base leading-relaxed text-paragraph">
-            To get started, see either the  <ParagraphLink href="#installation" text={"Installation"} /> or the <ParagraphLink href={"#build-from-source"} text={"Build From Source"}/> section.
+            To get started, see either the{" "}
+            <ParagraphLink href="#installation" text={"Installation"} /> or the{" "}
+            <ParagraphLink
+              href={"#build-from-source"}
+              text={"Build From Source"}
+            />{" "}
+            section.
           </p>
         </div>
       </Section>
