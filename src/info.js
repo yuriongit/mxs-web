@@ -57,19 +57,19 @@ export const systems = [
       "sh install-mac.sh",
     ],
     requirements: [
-      { name: "Architecture", version: "arm64 (Apple Silicon)" },
-      { name: "Shell", version: "Bash" },
+      { type: "Architecture", name: "arm64 (Apple Silicon)" },
+      { type: "Shell", name: "Bash" },
     ],
   },
 ]
 
 export const buildFromSourceReqs = [
-  { name: "Go", version: "1.27+" },
+  { type: null, name: "Go", version: "1.27+" },
   {
+    type: "Shell",
     name: "Bash",
-    version: "5.3.9+",
+    version: null,
   },
-  { name: "Architecture", version: "x86_64" },
 ]
 
 export const installationReqs = [
