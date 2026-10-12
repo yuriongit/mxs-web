@@ -57,8 +57,8 @@ export const systems = [
       "sh install-mac.sh",
     ],
     requirements: [
-      { name: "Architecture", version: "arm64 (Apple Silicon)" },
-      { name: "Shell", version: "Bash" },
+      { type: "Architecture", name: "arm64 (Apple Silicon)" },
+      { type: "Shell", name: "Bash" },
     ],
   },
 ]
