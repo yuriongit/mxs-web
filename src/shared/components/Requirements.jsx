@@ -12,8 +12,8 @@ export const Requirements = ({
     <dl className="divide-y divide-box-outline text-xs">
       {reqs.map((req) => {
         let header
-        let value 
-        
+        let value
+
         if (
           // Table header = Requirement type
           // Table value = Requirement name
@@ -31,7 +31,7 @@ export const Requirements = ({
           header = req.name
           value = req.version
         }
-        
+
         return (
           <div
             key={req.name}
