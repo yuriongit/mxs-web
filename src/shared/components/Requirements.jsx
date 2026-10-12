@@ -15,8 +15,8 @@ export const Requirements = ({
           key={req.name}
           className="flex items-center justify-between gap-4 px-4 py-2.5"
         >
-          <dt className="text-paragraph">{req.name}</dt>
-          <dd className="font-bold text-blue">{req.version}</dd>
+          <dt className="text-paragraph">{req.type}</dt>
+          <dd className="font-bold text-blue">{req.name}</dd>
         </div>
       ))}
     </dl>
