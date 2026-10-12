@@ -1,24 +1,21 @@
 import {
   IconFolderOpen,
-  IconHammer,
   IconMarkdown,
   IconStack2,
 } from "@tabler/icons-react"
 import {
-  buildFromSourceReqs,
-  buildFromSourceSteps,
   docs,
   infrastructure,
   repo,
 } from "../../info"
 import { FileTree } from "../../shared/components/FileTree"
 import { ParagraphLink } from "../../shared/components/ParagraphLink"
-import { CodeBlock } from "../../shared/ui/CodeBlock"
 import { Section } from "../../shared/ui/Section"
 import { Installation } from "./sections/InstallationSection"
 import { LandingSection } from "./sections/LandingSection"
 import { DisclaimerSection } from "./sections/DisclaimerSection"
 import { FeaturesSection } from "./sections/FeaturesSection"
+import { BuildFromSourceSection } from "./sections/BuildFromSourceSection"
 
 export const Home = () => (
   <div className="min-h-screen text-neutral-300">
@@ -27,32 +24,7 @@ export const Home = () => (
       <DisclaimerSection/>
       <FeaturesSection/>
       <Installation />
-
-      <Section
-        id="build-from-source"
-        title="Build From Source"
-        reqs={buildFromSourceReqs}
-        icon={IconHammer}
-        note={
-          <>
-            This section builds MXS from source. If you prefer to install a
-            public release, see the{" "}
-            <ParagraphLink href={"#installation"} text={"Installation"} />{" "}
-            section.
-          </>
-        }
-      >
-        <ol className="space-y-6">
-          {buildFromSourceSteps.map((s, i) => (
-            <li key={s.label}>
-              <div className="mb-2 text-paragraph">
-                <span className="text-pink text-base">{i + 1}.</span> {s.label}
-              </div>
-              <CodeBlock>{s.code}</CodeBlock>
-            </li>
-          ))}
-        </ol>
-      </Section>
+      <BuildFromSourceSection/>
 
       <Section
         id="scripts-home"
