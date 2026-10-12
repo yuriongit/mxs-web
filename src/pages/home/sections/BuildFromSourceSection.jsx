@@ -1,10 +1,5 @@
-import {
-  IconHammer,
-} from "@tabler/icons-react"
-import {
-  buildFromSourceReqs,
-  buildFromSourceSteps,
-} from "../../../info"
+import { IconHammer } from "@tabler/icons-react"
+import { buildFromSourceReqs, buildFromSourceSteps } from "../../../info"
 import { ParagraphLink } from "../../../shared/components/ParagraphLink"
 import { CodeBlock } from "../../../shared/ui/CodeBlock"
 import { Section } from "../../../shared/ui/Section"

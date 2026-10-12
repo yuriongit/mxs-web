@@ -1,6 +1,4 @@
-import {
-  IconFolderOpen,
-} from "@tabler/icons-react"
+import { IconFolderOpen } from "@tabler/icons-react"
 import { repo } from "../../../info"
 import { FileTree } from "../../../shared/components/FileTree"
 import { ParagraphLink } from "../../../shared/components/ParagraphLink"

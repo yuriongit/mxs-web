@@ -1,7 +1,5 @@
-import { IconStack2 } from "@tabler/icons-react";
-import {
-  infrastructure,
-} from "../../info"
+import { IconStack2 } from "@tabler/icons-react"
+import { infrastructure } from "../../info"
 
 export const InfrastructureSection = () => (
   <Section id="infrastructure" title="Infrastructure" icon={IconStack2}>

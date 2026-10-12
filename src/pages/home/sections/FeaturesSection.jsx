@@ -1,9 +1,5 @@
-import {
-  IconCarambola,
-} from "@tabler/icons-react"
-import {
-  features,
-} from "../../../info"
+import { IconCarambola } from "@tabler/icons-react"
+import { features } from "../../../info"
 import { ParagraphLink } from "../../../shared/components/ParagraphLink"
 import { Section } from "../../../shared/ui/Section"
 

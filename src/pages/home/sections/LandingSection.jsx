@@ -1,7 +1,5 @@
 import demoVideo from "../../../assets/demo.webm"
-import {
-  repo,
-} from "../../../info"
+import { repo } from "../../../info"
 
 export const LandingSection = () => (
   <div className="min-h-screen flex flex-col justify-center gap-10">
@@ -27,7 +25,7 @@ export const LandingSection = () => (
           <span className="text-blue">execute</span>
           {""} your Bash <span className="text-pink">scripts.</span>
         </p>
-  
+
         <div className="mt-8 max-w-2xs w-full flex gap-2.5 text-sm">
           <a
             href="#installation"
@@ -43,7 +41,7 @@ export const LandingSection = () => (
           </a>
         </div>
       </div>
-  
+
       {/* Demo GIF. Swap the placeholder for: <img src={demoGif} alt="MXS demo" className="h-full w-full object-cover" /> */}
       <div className="aspect-video w-full sm:max-w-lg overflow-hidden border border-dashed border-box-outline bg-box/50">
         <div className="flex h-full w-full items-center justify-center text-xs uppercase tracking-wide text-neutral-600">

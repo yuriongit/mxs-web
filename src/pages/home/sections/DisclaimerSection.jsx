@@ -1,6 +1,4 @@
-import {
-  IconAlertTriangle,
-} from "@tabler/icons-react"
+import { IconAlertTriangle } from "@tabler/icons-react"
 import { ParagraphLink } from "../../../shared/components/ParagraphLink"
 import { Section } from "../../../shared/ui/Section"
 
@@ -16,10 +14,7 @@ export const DisclaimerSection = () => (
       <p className="text-base leading-relaxed text-paragraph">
         To get started, see either the{" "}
         <ParagraphLink href="#installation" text={"Installation"} /> or the{" "}
-        <ParagraphLink
-          href={"#build-from-source"}
-          text={"Build From Source"}
-        />{" "}
+        <ParagraphLink href={"#build-from-source"} text={"Build From Source"} />{" "}
         section.
       </p>
     </div>

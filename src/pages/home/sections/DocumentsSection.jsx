@@ -1,9 +1,5 @@
-import {
-  IconMarkdown,
-} from "@tabler/icons-react"
-import {
-  docs,
-} from "../../../info"
+import { IconMarkdown } from "@tabler/icons-react"
+import { docs } from "../../../info"
 import { Section } from "../../../shared/ui/Section"
 
 export const DocumentsSection = () => (
