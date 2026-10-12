@@ -1,5 +1,4 @@
 import {
-  IconAlertTriangle,
   IconCarambola,
   IconFolderOpen,
   IconHammer,
@@ -20,31 +19,13 @@ import { CodeBlock } from "../../shared/ui/CodeBlock"
 import { Section } from "../../shared/ui/Section"
 import { Installation } from "./sections/InstallationSection"
 import { LandingSection } from "./sections/LandingSection"
+import { DisclaimerSection } from "./sections/DisclaimerSection"
 
 export const Home = () => (
   <div className="min-h-screen text-neutral-300">
     <main id="top" className="mx-auto">
       <LandingSection/>
-      <Section id="status" title="Disclaimer" icon={IconAlertTriangle}>
-        <div className="flex w-full flex-col gap-2.5 md:items-start md:justify-between">
-          <p className="text-base leading-relaxed text-paragraph">
-            1. This page is still under active development.
-          </p>
-          <p className="text-base leading-relaxed text-paragraph">
-            2. MXS has now been released under v0.1.0-beta.
-          </p>
-          <p className="text-base leading-relaxed text-paragraph">
-            To get started, see either the{" "}
-            <ParagraphLink href="#installation" text={"Installation"} /> or the{" "}
-            <ParagraphLink
-              href={"#build-from-source"}
-              text={"Build From Source"}
-            />{" "}
-            section.
-          </p>
-        </div>
-      </Section>
-
+      <DisclaimerSection/>
       <Section id="features" title="Features" icon={IconCarambola}>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
