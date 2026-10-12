@@ -50,6 +50,7 @@ export const LandingSection = () => (
             muted
             loop
             autoPlay
+            playsInline
             className="h-full w-full object-cover backdrop-blur-xs"
           >
             <source src={demoVideo} type="video/webm"></source>
