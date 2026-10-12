@@ -70,7 +70,6 @@ export const buildFromSourceReqs = [
     name: "Bash",
     version: null,
   },
-  { type: "Architecture", name: "x86_64" },
 ]
 
 export const installationReqs = [
