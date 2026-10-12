@@ -1,10 +1,8 @@
 import {
   IconMarkdown,
-  IconStack2,
 } from "@tabler/icons-react"
 import {
   docs,
-  infrastructure,
 } from "../../info"
 import { Section } from "../../shared/ui/Section"
 import { Installation } from "./sections/InstallationSection"
@@ -23,16 +21,6 @@ export const Home = () => (
       <Installation />
       <BuildFromSourceSection/>
       <YourScriptsHomeSection/>
-      <Section id="infrastructure" title="Infrastructure" icon={IconStack2}>
-        <dl className="divide-y divide-box-outline border border-box-outline text-sm">
-          {infrastructure.map(([k, v]) => (
-            <div key={k} className="flex justify-between gap-4 px-4 py-3">
-              <dt className="text-subnote">{k}</dt>
-              <dd className="text-right text-paragraph">{v}</dd>
-            </div>
-          ))}
-        </dl>
-      </Section>
 
       <Section
         id="documents"
