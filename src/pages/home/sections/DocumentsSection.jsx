@@ -9,7 +9,7 @@ export const DocumentsSection = () => (
     lineBreak={true}
     icon={IconMarkdown}
   >
-    <ul className="space-y-2 text-sm">
+    <ul className="space-y-2 text-base">
       {docs.map(([name, href]) => (
         <li key={name}>
           <a

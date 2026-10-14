@@ -21,8 +21,8 @@ export const BuildFromSourceSection = () => (
     <ol className="space-y-6">
       {buildFromSourceSteps.map((s, i) => (
         <li key={s.label}>
-          <div className="mb-2 text-paragraph">
-            <span className="text-pink text-base">{i + 1}.</span> {s.label}
+          <div className="mb-2 text-paragraph text-base">
+            <span className="text-pink">{i + 1}.</span> {s.label}
           </div>
           <CodeBlock>{s.code}</CodeBlock>
         </li>

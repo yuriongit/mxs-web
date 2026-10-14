@@ -34,7 +34,7 @@ export const FileTree = () => {
                 {n.name}
                 {n.type === "dir" && "/"}
               </span>
-              <span className="text-subnote text-sm font-normal font-reg text-code">
+              <span className="text-subnote font-normal font-reg text-code">
                 {n?.note && `# ${n.note}`}
               </span>
             </li>
