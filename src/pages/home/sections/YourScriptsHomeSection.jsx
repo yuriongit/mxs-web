@@ -7,7 +7,7 @@ import { Section } from "../../../shared/ui/Section"
 export const YourScriptsHomeSection = () => (
   <Section id="scripts-home" title="Your Script's Home" icon={IconFolderOpen}>
     <div className="flex w-full flex-col gap-8.5 md:flex-row md:items-start md:justify-between">
-      <p className="text-base leading-relaxed text-paragraph max-w-sm">
+      <p className="text-lg leading-relaxed text-paragraph max-w-sm">
         <code className="text-pink font-syntax text-code">~/.mxs </code> is the
         home for your scripts. View the full layout document for more detailed
         information: <ParagraphLink href={`${repo}/blob/main/docs/mxs.md`} />{" "}

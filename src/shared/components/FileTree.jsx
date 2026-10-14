@@ -18,7 +18,7 @@ export const FileTree = () => {
           let color = ""
 
           if (n.type === "dir") {
-            color = "font-bold text-blue"
+            color = "text-blue"
           } else if (n.type === "base") {
             color = "text-pink"
           } else {
@@ -28,13 +28,13 @@ export const FileTree = () => {
           return (
             <li
               key={`${n.depth}-${n.name}`}
-              className="flex items-center justify-between gap-4 px-4 py-1 font-bold text-code"
+              className="flex items-center justify-between gap-4 px-4 py-1 font-light text-code"
             >
               <span style={{ paddingLeft: n.depth * 18 }} className={color}>
                 {n.name}
                 {n.type === "dir" && "/"}
               </span>
-              <span className="text-subnote text-sm font-normal font-reg text-code">
+              <span className="text-subnote font-normal font-reg text-code">
                 {n?.note && `# ${n.note}`}
               </span>
             </li>

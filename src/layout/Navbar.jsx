@@ -3,8 +3,8 @@ import { repo } from "../info"
 
 export const Navbar = () => (
   <nav className="w-full flex items-center justify-center border-b border-b-box-outline fixed top-0 backdrop-blur-md z-40 -bg-linear-330 from-box/15 to-black/50">
-    <div className="max-w-4xl py-6 px-5 lg:px-10 text-sm w-full flex justify-between items-center">
-      <Link to="/" className="font-extrabold text-navlogo">
+    <div className="max-w-5xl py-6 px-5 lg:px-10 text-sm w-full flex justify-between items-center">
+      <Link to="/" className="font-light text-navlogo">
         <span className="text-lime">M</span>
         <span className="text-blue">X</span>
         <span className="text-pink">S</span>
@@ -13,7 +13,7 @@ export const Navbar = () => (
         <li>
           <Link
             to="/start"
-            className="transition text-subnote font-medium hover:text-pink"
+            className="transition text-subnote font-normal hover:text-pink"
           >
             Start
           </Link>
@@ -21,7 +21,7 @@ export const Navbar = () => (
         <li>
           <Link
             to="/docs"
-            className="transition text-subnote font-medium hover:text-pink"
+            className="transition text-subnote font-normal hover:text-pink"
           >
             Docs
           </Link>
@@ -31,7 +31,7 @@ export const Navbar = () => (
             href={repo}
             target="_blank"
             rel="noreferrer"
-            className="transition text-subnote font-medium hover:text-pink"
+            className="transition text-subnote font-normal hover:text-pink"
           >
             GitHub
           </a>

@@ -11,10 +11,10 @@ body {
   /* Font sizes */
   --text-navlogo: 20px;
   --text-base: 17px;
-  --text-heading: 24px;
+  --text-heading: 26px;
   --text-sm: 16px;
   --text-xs: 14.5px;
-  --text-code: 13.5px;
+  --text-code: 14px;
 
   /* Fonts */
   --font-syntax: JetBrains Mono;

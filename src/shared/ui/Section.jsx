@@ -28,7 +28,7 @@ export const Section = ({
               )}
             </div>
             {note && (
-              <p className="mb-6 max-w-116 text-sm text-neutral-500">{note}</p>
+              <p className="mb-6 max-w-116 text-lg text-neutral-500">{note}</p>
             )}
           </div>
           <div className="pb-5 w-full">

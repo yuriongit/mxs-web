@@ -29,9 +29,9 @@ export const Installation = () => {
         </>
       }
     >
-      <ol className="space-y-6">
+      <ol className="space-y-6 text-base">
         <li>
-          <div className="mb-2 text-sm text-paragraph">
+          <div className="mb-2 text-paragraph">
             <span className="text-pink">1.</span> Download and install the
             binary
           </div>
