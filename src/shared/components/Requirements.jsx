@@ -38,7 +38,7 @@ export const Requirements = ({
             className="flex items-center justify-between gap-4 px-4 py-2.5"
           >
             <dt className="text-paragraph">{header}</dt>
-            <dd className="font-bold text-blue">{value}</dd>
+            <dd className="font-normal text-blue">{value}</dd>
           </div>
         )
       })}

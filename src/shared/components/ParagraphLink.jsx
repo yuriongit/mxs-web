@@ -5,7 +5,7 @@ export const ParagraphLink = ({ text, path, href }) => {
     return (
       <Link
         to={`/${path}`}
-        className={`underline font-semibold decoration-neutral-700 underline-offset-4 transition hover:brightness-190 brightness-150`}
+        className={`underline font-medium decoration-neutral-700 underline-offset-4 transition hover:brightness-190 brightness-150`}
       >
         {text}
       </Link>
