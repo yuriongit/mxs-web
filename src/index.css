@@ -5,6 +5,7 @@ body {
   font-family:
     Sofia Sans,
     sans-serif;
+  font-weight: 375;
 }
 
 @theme {
@@ -23,13 +24,17 @@ body {
   /* Pallette */
   --color-lime: #b6ff6e;
   --color-pink: #ff6eb7;
-  --color-box: #1c1c1c;
+  --color-dark-pink: #17000e;
+  --color-black-pink: #0f0009;
+
   --color-blue: #6eb6ff;
 
   --color-paragraph: #dbdbdb;
   --color-subnote: #737373;
 
   /* Miscellaneous colors */
-  --color-box-outline: #292929;
+  --color-box-outline: #171717;
+  --color-dark-box: #0a0a0a;
+  --color-box: #121212;
   --color-dark-line-break: #171717;
 }

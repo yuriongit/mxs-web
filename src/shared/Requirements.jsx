@@ -1,13 +1,14 @@
 export const Requirements = ({
   reqs,
+  systemId,
   title = "Requirements",
   className = "",
 }) => (
   <div
-    className={`w-full shrink-0 border border-dashed border-box-outline bg-box/50 ${className}`}
+    className={`sm:max-w-xs w-full shrink-0 border border-box-outline bg-box/50 ${className}`}
   >
-    <p className="border-b border-dashed border-box-outline px-4 py-2 text-xs font-normal text-pink">
-      {title}
+    <p className="border-b border-box-outline px-4 py-2 text-xs font-normal text-pink">
+      {title} {systemId && `for ${systemId}`}
     </p>
     <dl className="divide-y divide-box-outline text-xs">
       {reqs.map((req) => {
@@ -27,7 +28,7 @@ export const Requirements = ({
         } else {
           // Table header = Requirement name
           // Table value = Requirement version
-          // e.g. (Go, 1.27+)
+          // e.g. (Go, 1.27.1+)
           header = req.name
           value = req.version
         }

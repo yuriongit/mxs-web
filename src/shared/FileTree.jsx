@@ -1,7 +1,7 @@
 // Placeholder layout. Edit to match what ~/.mxs really contains.
 const tree = [
   // "border-b border-neutral-800 px-4 py-2 font-bold text-pink"
-  { name: "~/.mxs", type: "base", depth: 0, note: "Home" },
+  { name: "~/.mxs", type: "base", depth: 0, note: "Config directory" },
   { name: "scripts", type: "dir", depth: 1, note: "Your scripts" },
   { name: "demo.sh", type: "file", depth: 2 },
   { name: "clone.sh", type: "file", depth: 2 },
@@ -12,23 +12,23 @@ const tree = [
 
 export const FileTree = () => {
   return (
-    <div className="p-1.5 w-full sm:max-w-lg overflow-hidden font-syntax text-xs backdrop-blur-xs border border-dashed border-box-outline bg-box/50">
+    <div className="py-5 px-1.5 w-full sm:max-w-lg overflow-hidden font-syntax text-xs backdrop-blur-xs border border-dashed border-box-outline bg-box/50">
       <ul className="py-2">
         {tree.map((n) => {
           let color = ""
 
           if (n.type === "dir") {
-            color = "text-blue"
-          } else if (n.type === "base") {
             color = "text-pink"
-          } else {
+          } else if (n.type === "base") {
             color = "text-lime"
+          } else {
+            color = "text-blue"
           }
 
           return (
             <li
               key={`${n.depth}-${n.name}`}
-              className="flex items-center justify-between gap-4 px-4 py-1 font-light text-code"
+              className="flex items-center justify-between gap-4 px-4 py-1 font-normal text-code"
             >
               <span style={{ paddingLeft: n.depth * 18 }} className={color}>
                 {n.name}

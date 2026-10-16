@@ -20,6 +20,7 @@ export const CodeBlock = ({ children }) => {
       setCopied(true)
       setTimeout(() => setCopied(false), 1200)
     } catch {
+      console.log("failed to copy code block")
       /* clipboard unavailable */
     }
   }
@@ -28,7 +29,7 @@ export const CodeBlock = ({ children }) => {
     <div
       className={`group relative border border-box-outline bg-box/35 backdrop-blur-xs`}
     >
-      <pre className="overflow-x-auto p-4 pr-16 text-code font-syntax font-light leading-relaxed text-zinc-200">
+      <pre className="overflow-x-auto p-4 pr-16 text-code font-syntax leading-relaxed text-zinc-200">
         {linesWithIds.map(({ id, line }) => (
           <div key={id}>
             <span className="select-none text-zinc-500">$ </span>

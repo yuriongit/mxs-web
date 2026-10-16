@@ -1,20 +1,18 @@
-import { BuildFromSourceSection } from "./sections/BuildFromSourceSection"
-import { DisclaimerSection } from "./sections/DisclaimerSection"
+import { AboutSection } from "./sections/AboutSection"
 import { DocumentsSection } from "./sections/DocumentsSection"
-import { FeaturesSection } from "./sections/FeaturesSection"
-import { Installation } from "./sections/InstallationSection"
+import { FeatureShowcaseSection } from "./sections/FeaturesShowcaseSection"
+import { InfrastructureSection } from "./sections/InfrastructureSection"
 import { LandingSection } from "./sections/LandingSection"
-import { YourScriptsHomeSection } from "./sections/YourScriptsHomeSection"
+import { HomeForYourScriptsSections } from "./sections/ScriptsHomeSection"
 
 export const Home = () => (
   <div className="min-h-screen text-neutral-300">
     <main id="top" className="mx-auto">
       <LandingSection />
-      <DisclaimerSection />
-      <FeaturesSection />
-      <Installation />
-      <BuildFromSourceSection />
-      <YourScriptsHomeSection />
+      <FeatureShowcaseSection />
+      <HomeForYourScriptsSections />
+      <AboutSection />
+      <InfrastructureSection />
       <DocumentsSection />
     </main>
   </div>

@@ -1,6 +1,12 @@
 export const repo = "https://github.com/yuriongit/mxs"
 
-const RAW_GITHUB_USER_CONTENT_URL =
+export const REPO = "yuriongit/mxs"
+export const VERSION = "v0.1.0-beta"
+
+export const RELEASES = `https://github.com/${REPO}/releases`
+export const RAW = `https://raw.githubusercontent.com/${REPO}/main`
+
+export const RAW_GITHUB_USER_CONTENT_URL =
   "https://raw.githubusercontent.com/yuriongit/mxs/main"
 
 export const repoNoHttps = "github.com/yuriongit/mxs"
@@ -64,11 +70,10 @@ export const systems = [
 ]
 
 export const buildFromSourceReqs = [
-  { type: null, name: "Go", version: "1.27+" },
+  { name: "Go", version: "1.27.1+" },
   {
-    type: "Shell",
-    name: "Bash",
-    version: null,
+    name: "Shell",
+    version: "Bash",
   },
 ]
 
@@ -81,7 +86,7 @@ export const installationReqs = [
 ]
 export const infrastructure = [
   ["Main", "Go, Cobra, BubbleTea"],
-  ["Tooling", "GolangCI-Lint, Go"],
+  ["Tooling", "Go, GolangCI-Lint"],
   ["UI", "Bubbles, Lipgloss"],
 ]
 
@@ -98,6 +103,9 @@ export const buildFromSourceSteps = [
     label: "Install",
     code: "go install",
   },
+]
+
+export const QuickStartSteps = [
   {
     label: "Initialize MXS",
     code: "mxs init",
@@ -109,8 +117,11 @@ export const buildFromSourceSteps = [
 ]
 
 export const docs = [
-  ["Architecture", `${repo}/blob/main/docs/architecture.md`],
-  ["Planned", `${repo}/blob/main/docs/planned.md`],
-  ["Preview", `${repo}/blob/main/docs/preview.md`],
-  ["~/.mxs layout", `${repo}/blob/main/docs/mxs.md`],
+  ["Architectural Blueprint", `${repo}/blob/main/docs/architecture.md`],
+  ["Planned Features", `${repo}/blob/main/docs/planned-features.md`],
+  [
+    "Configuration Directory Layout",
+    `${repo}/blob/main/docs/configuration-directory.md`,
+  ],
+  ["Options for mxs.json", `${repo}/blob/main/docs/mxs.schema.json.md`],
 ]
